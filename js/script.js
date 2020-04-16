@@ -1,9 +1,9 @@
-function init(){
-	var name = document.getElementsByClassName("center")[1];	
-	var i = document.getElementById("entryinput").value;
-	var result = document.getElementById('textoutput');
-	alert(name.textContent + ": " +i);
-	result.innerHTML = '<h2>' + i + "</h2>";
+function init(){	
+	var input = document.getElementById("entryinput");
+        var button = document.getElementById("entrybutton");
+	var output = document.getElementById("textoutput");
+	alert(name.textContent + ": " + input.value);
+	output.innerHTML = input.value;
 }
-var d1 = document.getElementById('entrybutton');
-d1.addEventListener('click', init);
+
+window.addEventListener("click", init);
